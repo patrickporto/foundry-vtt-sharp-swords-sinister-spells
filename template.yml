@@ -1,26 +1,54 @@
 Actor:
-  types:
-    - hero
-    - npc
-  templates:
-    base:
-      hp:
-        min: 0
-        max: 0
-        value: 0
-      level: 1
-  hero:
+    types:
+        - character
+        - enemy
     templates:
-      - base
-  npc:
-    templates:
-      - base
+    character:
+        hp:
+            min: 0
+            max: 0
+            value: 0
+        level: 1
+        hitDice: ""
+        luckDie: ""
+        attributes:
+            physique: 0
+            agility: 0
+            intellect: 0
+            willpower: 0
+        archetype: ""
+        vocation: ""
+        complication: ""
 Item:
-  types:
-    - weapon
-    - spell
-  weapon:
-    damage: 5
-  spell:
-    level: 0
-    damage: 5
+    types:
+        - weapon
+        - armor
+        - gear
+        - spell
+        - specialAbility
+    weapon:
+        name: ''
+        description: ''
+        category: ''
+        cost: 0
+        damageDie: ''
+    armor:
+        name: ''
+        description: ''
+        category: ''
+        damageReduction: '1'
+        agilityLimit: 0
+        cost: 0
+    shield:
+        negativeDice: 1
+        cost: 0
+    gear:
+        name: ''
+        description: ''
+        cost: 0
+    spell:
+        name: ''
+        description: ''
+    specialAbility:
+        name: ''
+        description: ''

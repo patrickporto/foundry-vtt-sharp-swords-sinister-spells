@@ -6,7 +6,7 @@
         "build": "npx tsc"
     },
     "devDependencies": {
-        "typescript": "^4.9.4",
-        "@league-of-foundry-developers/foundry-vtt-types": "git://github.com/League-of-Foundry-Developers/foundry-vtt-types.git#main"
+        "@league-of-foundry-developers/foundry-vtt-types": "github:League-of-Foundry-Developers/foundry-vtt-types#main",
+        "typescript": "^4.9.4"
     }
 }

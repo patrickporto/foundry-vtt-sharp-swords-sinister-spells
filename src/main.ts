@@ -1,7 +1,9 @@
-Hooks.on("init", function() {
-    console.log("This code runs once the Foundry VTT software begins its initialization workflow.");
+import { SHARPSWORDSSINISTERSPELLS } from "./constants.js";
+
+Hooks.on("init", async () => {
+    (CONFIG as any).SHARPSWORDSSINISTERSPELLS = SHARPSWORDSSINISTERSPELLS
 });
 
-Hooks.on("ready", function() {
+Hooks.on("ready", async () => {
     console.log("This code runs once core initialization is ready and game data is available.");
 });
